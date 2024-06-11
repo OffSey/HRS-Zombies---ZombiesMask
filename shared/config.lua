@@ -1,5 +1,7 @@
 Config = {}
 
+Config.NameZombieScript = 'hrs_zombies_V2'
+
 Config.MaleMaskID = 22
 Config.MaleMaskTextureID = 0
 
