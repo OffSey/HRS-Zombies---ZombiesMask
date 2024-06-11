@@ -20,7 +20,7 @@ RegisterNetEvent('masks:client:zom', function(itemName)
                 }
             })
             Citizen.Wait(500)
-            exports['zombies_script']:setProtectionTime(99999999999)
+            exports[Config.NameZombieScript]:setProtectionTime(99999999999)
             SetPedComponentVariation(PlayerPedId(), 1, Config.MaleMaskID, Config.MaleMaskTextureID)
             wearing = true
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -38,7 +38,7 @@ RegisterNetEvent('masks:client:zom', function(itemName)
                 }
             })
             Citizen.Wait(500)
-            exports['zombies_script']:setProtectionTime(0) 
+            exports[Config.NameZombieScript]:setProtectionTime(0) 
             SetPedComponentVariation(PlayerPedId(), 1, 0, 0)
             wearing = false
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -60,7 +60,7 @@ RegisterNetEvent('masks:client:zom', function(itemName)
                 }
             })
             Citizen.Wait(500)
-            exports['zombies_script']:setProtectionTime(99999999999)
+            exports[Config.NameZombieScript]:setProtectionTime(99999999999)
             SetPedComponentVariation(PlayerPedId(), 1, Config.FemaleMaskID, Config.FemaleMaskTextureI)
             wearing = true
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -78,7 +78,7 @@ RegisterNetEvent('masks:client:zom', function(itemName)
                 }
             })
             Citizen.Wait(500)
-            exports['zombies_script']:setProtectionTime(0) 
+            exports[Config.NameZombieScript]:setProtectionTime(0) 
             SetPedComponentVariation(PlayerPedId(), 1, 0, 0)
             wearing = false
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
